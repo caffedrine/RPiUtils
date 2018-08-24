@@ -1,3 +1,6 @@
+sudo apt-get update
+sudo apt-get upgrade
+
 
 # download precompiled OpenCV
 wget https://github.com/manashmndl/FabLabRpiWorkshop2017/releases/download/1.0.0/CV.tar.gz
