@@ -15,7 +15,7 @@ cp CompiledOpenCV/home/pi/.bashrc ~/
 cp CompiledOpenCV/home/pi/.profile ~/
 
 sudo rm -rf /usr/local/*
-sudo cp -R CompiledOpenCV/usr/local /usr/local
+sudo cp -R CompiledOpenCV/usr/local/* /usr/local/
 
 sudo apt-get install -y libjasper-dev
 
