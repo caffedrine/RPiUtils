@@ -1,6 +1,9 @@
 sudo apt-get update
 sudo apt-get upgrade
 
+# Install pip
+sudo apt-get install python-pip
+sudo apt-get install python-pkg-resources
 
 # download precompiled OpenCV
 wget https://github.com/manashmndl/FabLabRpiWorkshop2017/releases/download/1.0.0/CV.tar.gz
@@ -29,3 +32,5 @@ cd ~/.virtualenvs/cv/lib/python3.5/site-packages/
 ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
 
 pip install numpy
+
+rm CV.tar.gz
