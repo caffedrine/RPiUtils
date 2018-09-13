@@ -1,7 +1,8 @@
 #include <chrono>
 #include <thread>
 #include <iostream>
-#include <pigpio.h>
+
+#include "hal.h"
 
 using namespace std;
 using namespace this_thread;
@@ -11,31 +12,31 @@ using namespace chrono;
 
 int main(int argc, char *argv[])
 {
-	cout << "--- start --- " << endl;
-   	if (gpioInitialise() < 0)
-   	{
-   		cout << "Failed to initialize" << endl; 
-   		return 1;
-   	}
+   cout << "--- start --- " << endl;
+      if (Vfp_GpioInitialize() < 0)
+      {
+         cout << "Failed to initialize" << endl; 
+         return 1;
+      }
 
-   	gpioSetMode(PIN, PI_INPUT);
+      Vfb_SetPinMode(PIN, OUTPUT);
 
-   	bool toggleFlag = false;
-   	while(1)
-   	{
-   		if(toggleFlag)
-   		{
-   			gpioWrite(PIN, 1);	
-	   		toggleFlag = false;
-   		}
-   		else
-   		{
-   			gpioWrite(PIN, 0);
-   			toggleFlag = true;
-   		}
+      bool toggleFlag = false;
+      while(1)
+      {
+         if(toggleFlag)
+         {
+            Vfb_WriteGpio(PIN, HIGH);
+            toggleFlag = false;
+         }
+         else
+         {
+            Vfb_WriteGpio(PIN, LOW);
+            toggleFlag = true;
+         }
 
-   		sleep_for( microseconds(10) );
-	}
+         sleep_for( microseconds(100) );
+      }
 
    gpioTerminate();
 }
