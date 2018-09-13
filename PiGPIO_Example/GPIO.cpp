@@ -13,7 +13,7 @@ using namespace chrono;
 int main(int argc, char *argv[])
 {
    cout << "--- start --- " << endl;
-      if (Vfp_GpioInitialize() < 0)
+      if (Vfb_GpioInitialize() < 0)
       {
          cout << "Failed to initialize" << endl; 
          return 1;

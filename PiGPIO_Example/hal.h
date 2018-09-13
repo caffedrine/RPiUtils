@@ -58,7 +58,7 @@ int _gpio_sleep(int microseconds)
 	return gpioSleep(0, 0, microseconds); 
 }
 
-#define Vfp_GpioInitialize()                _initialize_gpio_interface()
+#define Vfb_GpioInitialize()                _initialize_gpio_interface()
 #define Vfb_SetPinMode(arg1, arg2)          _set_pin_mode(arg1, arg2)
 
 #define Vfb_ReadGpio(arg)         			_read_gpio(arg)
