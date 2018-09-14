@@ -1,0 +1,1 @@
+gcc -pthread -o spi-pigpio-speed spi-pigpio-speed.c -lpigpio
