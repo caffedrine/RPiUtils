@@ -6,4 +6,4 @@ cd PIGPIO
 make
 sudo make install
 sudo ./pigpiod
-sudo pigs m $1 $2
+sudo pigs m $1 $2  ###pin - mode
