@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/PiGPIO.dir/main.cpp.o  -o PiGPIO -lpigpio -lrt -lpthread 
