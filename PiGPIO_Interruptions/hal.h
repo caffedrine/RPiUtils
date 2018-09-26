@@ -1,7 +1,7 @@
 ﻿#ifndef HAL_H
 #define HAL_H
 
-//#define PIGPIO
+#define PIGPIO
 
 #ifdef PIGPIO
 #include <pigpio.h>
@@ -13,6 +13,8 @@
 /** **************************************** **/
 
 /** **************************************** **/
+
+#define ERROR_LOG(str)	0
 
 enum LogicalLevel
 {
@@ -43,7 +45,7 @@ static inline int _initialise_gpio_interface()
     }
 
     if(gpioInitialise() == PI_INIT_FAILED)
-        qDebug() << "PiGPIO Initialisation failed!";
+    	ERROR_LOG("Failed to initialise PiGPIO");
     return PI_INIT_FAILED;
 #else
     return -1;
@@ -55,7 +57,7 @@ static inline int _set_pin_mode(int pin, int  mode)
 #ifdef PIGPIO
     if(gpioSetMode(pin, mode) != 0)
     {
-        qDebug() << "Failed to set " << pin << " as INPUT";
+    	//ERROR_LOG("Failed to set " << pin << " as INPUT");
         return -3;
     }
     return 0;
