@@ -15,6 +15,7 @@ typedef enum PushButtonState
 }button_state_t;
 
 typedef void (*state_changed_cb_t)(button_state_t);
+typedef void (*gpio_callback_t)(int, int, uint32_t);
 
 class PushButton
 {
@@ -24,8 +25,6 @@ public:
     bool Debouncer = false;
     button_state_t CurrentState, PreviousState;
 	
-	state_changed_cb_t StateChangedCbFunc = NULL;
-    
     PushButton(int GpioPin);
     PushButton(int GpioPin, bool reversed);
     PushButton(int GpioPin, bool reversed, bool debouncer);
@@ -33,18 +32,14 @@ public:
     
     button_state_t ReadState();
     bool ReadGpio();
-    void SetStateChangedCallback( state_changed_cb_t );
-	
-    void test() {std::cout << "test" << std::endl;};
-    
+    void SetStateChangedCallback( state_changed_cb_t, gpio_callback_t );
+	void internal_gpio_callback(int pin, int level, uint32_t CurrentTick);
 
-	
 private:
 	/* State changed callback function*/
-	//void (*StateChangedCbFunc)(void);
+	state_changed_cb_t StateChangedCbFunc = NULL;
 	
 	void Init();
-	void internal_gpio_callback(int pin, int level, uint32_t CurrentTick, void *opaque);
 };
 
 #endif // PUSHBUTTON_H

@@ -12,7 +12,7 @@ using namespace std;
 #define PWM_FREQ	4000
 #define INT_PIN		20
 
-void gpio_callback(int pin, int NewLevel, uint32_t CurrentTicks, void *opaque)
+void gpio_callback(int pin, int NewLevel, uint32_t CurrentTicks)
 {
 	if( NewLevel == 2 || pin != INT_PIN )
 		return;
@@ -28,7 +28,7 @@ void gpio_callback(int pin, int NewLevel, uint32_t CurrentTicks, void *opaque)
 			LastState = CurrentState;
 			CurrentState = NewLevel;
 			
-			cout << "[" << counter << "][" << CurrentTicks - LastTicks << "][" << counter++ << "] New GPIO state: " << CurrentState << endl;
+			cout << "[" << counter << "][" << CurrentTicks - LastTicks << "] New GPIO state: " << CurrentState << endl;
 			
 			LastTicks = CurrentTicks;
 		}
@@ -52,16 +52,17 @@ int main()
 	Vfb_PwmOut(PWM_PIN, 128);
 	
 	/* Interruption pin state */
-	//gpioSetAlertFuncEx(INT_PIN, gpio_callback, NULL);
+	//gpioSetAlertFunc(INT_PIN, gpio_callback);
 	
 	/* Push button */
 	PushButton button(INT_PIN, false, false);
-	button.SetStateChangedCallback( PushButtonOnStateChanged );
+	gpio_callback_t TmpStaticCallback = button.internal_gpio_callback;
+	button.SetStateChangedCallback( PushButtonOnStateChanged, gpio_callback);
 	
 	bool toogleFlag = false;
 	while(1)
 	{
-		button.ReadState();
+		//button.ReadState();
 		
 		this_thread::sleep_for( chrono::milliseconds(1) );
 	}

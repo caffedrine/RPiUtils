@@ -43,9 +43,9 @@ void PushButton::Init()
 	{
 		Vfb_SetPullUpDown(this->GpioPin, PULL_DOWN);
 	}
-	
+
 	/* Enable interruptions on pin state changed */
-	//gpioSetAlertFuncEx(this->GpioPin, (this->gpio_callback), NULL);
+	//gpioSetAlertFunc(this->GpioPin, (this->*func) );
 	
 	this->ReadState();
 }
@@ -69,12 +69,13 @@ button_state_t PushButton::ReadState()
 	return CurrentState;
 }
 
-void PushButton::SetStateChangedCallback( state_changed_cb_t f)
+void PushButton::SetStateChangedCallback( state_changed_cb_t f, gpio_callback_t g)
 {
 	StateChangedCbFunc = f;
+	gpioSetAlertFunc(this->GpioPin, g );
 }
 
-void PushButton::internal_gpio_callback(int pin, int level, uint32_t tick, void *opaque)
+void PushButton::internal_gpio_callback(int pin, int level, uint32_t tick)
 {
 	if( pin != this->GpioPin )
 		return;
