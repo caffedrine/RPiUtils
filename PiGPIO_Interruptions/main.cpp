@@ -3,39 +3,66 @@
 #include <thread>
 
 #include "hal.h"
+#include "PushButton.h"
 
 using namespace std;
 
+#define DEBOUNCE_US	1000	/* 1 ms */
 #define PWM_PIN		21
-#define PWM_FREQ	5000
+#define PWM_FREQ	4000
 #define INT_PIN		20
 
-void gpio_callback(int pin, int level, uint32_t tick, void *opaque)
+void gpio_callback(int pin, int NewLevel, uint32_t CurrentTicks, void *opaque)
 {
-	cout << "New GPIO state: " << Vfb_ReadGpio(INT_PIN) << endl;
+	if( NewLevel == 2 || pin != INT_PIN )
+		return;
+	
+	static bool CurrentState = 0, LastState = 0;
+	static uint32_t LastTicks = 0;
+	static int counter = 0;
+	
+	if( NewLevel != CurrentState )
+	{
+		if(CurrentTicks - LastTicks >= DEBOUNCE_US)
+		{
+			LastState = CurrentState;
+			CurrentState = NewLevel;
+			
+			cout << "[" << counter << "][" << CurrentTicks - LastTicks << "][" << counter++ << "] New GPIO state: " << CurrentState << endl;
+			
+			LastTicks = CurrentTicks;
+		}
+	}
+}
+
+void PushButtonOnStateChanged(button_state_t NewState)
+{
+	static uint32_t LastTicks = Vfb_GetMicros();
+	cout <<"[" << (Vfb_GetMicros()  - LastTicks) << "] Button state changed: " << ((NewState==PushButtonState::DOWN)?"DOWN":"UP") << std::endl;
+	LastTicks = Vfb_GetMicros();
 }
 
 int main()
 {
 	Vfb_GpioInitialise();
 	
-	Vfb_SetPinMode(PWM_PIN, OUTPUT);
-	Vfb_SetPinMode(INT_PIN, INPUT);
-	
 	/* PWM stuff */
-	int pwm_result = gpioPWM(PWM_PIN, 128);
-	cout << "PWM result: " << pwm_result << endl;
-	int freq_result = gpioSetPWMfrequency(PWM_PIN, PWM_FREQ);
-	cout << "Freq result: " << freq_result << endl;
+	Vfb_SetPinMode(PWM_PIN, OUTPUT);
+	cout << "Freq PWM: " << Vfb_InitPwm(PWM_PIN, PWM_FREQ) << endl;
+	Vfb_PwmOut(PWM_PIN, 128);
 	
 	/* Interruption pin state */
-	gpioSetAlertFuncEx(INT_PIN, gpio_callback, NULL);
+	//gpioSetAlertFuncEx(INT_PIN, gpio_callback, NULL);
+	
+	/* Push button */
+	PushButton button(INT_PIN, false, false);
+	button.SetStateChangedCallback( PushButtonOnStateChanged );
 	
 	bool toogleFlag = false;
 	while(1)
 	{
-		//gpio_callback(0,0,0,NULL);
-		this_thread::sleep_for( chrono::milliseconds(100) );
-		continue;
+		button.ReadState();
+		
+		this_thread::sleep_for( chrono::milliseconds(1) );
 	}
 }
