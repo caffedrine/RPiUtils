@@ -3,7 +3,7 @@ project(PiGPIO)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(PiGPIO main.cpp PushButton.cpp PushButton.h)
+add_executable(PiGPIO main.cpp PushButton.cpp PushButton.h Gpio.cpp Gpio.h)
 
 target_link_libraries(PiGPIO pigpio)
 target_link_libraries(PiGPIO rt)

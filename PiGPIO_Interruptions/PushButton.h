@@ -1,5 +1,5 @@
-#ifndef PUSHBUTTON_H
-#define PUSHBUTTON_H
+#ifndef _PUSHBUTTON_H
+#define _PUSHBUTTON_H
 
 #include <iostream>
 #include <cstdint>
@@ -22,7 +22,7 @@ public:
     PushButtonState CurrentState, PreviousState;
 	
     PushButton(int GpioPin);
-    PushButton(int GpioPin, int DebounceTimeMicroseconds = 0);
+    PushButton(int GpioPin, int DebounceTimeMicroseconds );
     ~PushButton();
     
     PushButtonState ReadState();
@@ -43,4 +43,4 @@ private:
 	inline PushButtonState Gpio2State( bool GpioVal );
 };
 
-#endif // PUSHBUTTON_H
+#endif // _PUSHBUTTON_H
