@@ -44,7 +44,7 @@ int main()
 	Vfb_GpioInitialise();
 	
 	/* Push button */
-	PushButton button(BUTTON_PIN, 500000);
+	PushButton button(BUTTON_PIN, 10000);
 	button.SetPullState(PullState::DOWN);
 	button.SetReversedPolarity(false);
 	button.SetStateChangedCallback( PushButtonOnStateChanged );
@@ -57,7 +57,6 @@ int main()
 	Stepper stepper(STEPPER_PULSE, STEPPER_FEEDBACK, STEPPER_DIRECTION);
 	stepper.PwmConfig(100, 10);
 	stepper.SetStepsDoneCallback( OnStepsDone );
-	stepper.RunSteps(500);
 	
 	bool toogleFlag = false;
 	while(true)
@@ -66,6 +65,7 @@ int main()
 		
 		if(c == '1') stepper.RunSteps(100);
 		else if(c == '2') stepper.Stop();
+		else if(c == '3') stepper.Run();
 		else if(c == 'q') break;
 		
 		//this_thread::sleep_for( chrono::milliseconds(1) );

@@ -101,10 +101,15 @@ void Stepper::static_internal_step_callback(int pin, int level, uint32_t tick, v
 
 void Stepper::internal_step_callback(int pin, int NewLevel, uint32_t CurrentTick)
 {
+	/* Not our interrupt */
 	if( NewLevel == 2  || pin != this->FeedbackPin)
 		return;
-	if(NewLevel == 0)
+	
+	/* Count only high pulses */
+	if( NewLevel == 0 )
 		return;
+	
+	/* Count only when RunSteps() was called */
 	if(this->CurrentState != StepperState::RUNNING_STEPS)
 		return;
 	

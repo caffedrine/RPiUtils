@@ -12,11 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06b896d3-4e2a-41e7-93e7-86adb651b2a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Stepper.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stepper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/make.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/make.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stepper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Stepper.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -40,7 +36,7 @@
     <session id="-433609828">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -50,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="6292" />
+          <entry key="cpp" value="6405" />
           <entry key="h" value="3330" />
           <entry key="sh" value="109" />
           <entry key="txt" value="52" />
@@ -60,7 +56,7 @@
         <counts>
           <entry key="Bash" value="109" />
           <entry key="CMakeLists.txt" value="52" />
-          <entry key="ObjectiveC" value="9622" />
+          <entry key="ObjectiveC" value="9735" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -99,8 +95,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Stepper.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="108" column="15" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
+                <state relative-caret-position="480">
+                  <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                     <element signature="e#560#906#0" />
@@ -124,8 +120,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="362">
-                  <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+                <state relative-caret-position="88">
+                  <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -140,8 +136,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Stepper.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+                <state relative-caret-position="208">
+                  <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
                   <folding>
                     <element signature="e#39#57#0" expanded="true" />
                   </folding>
@@ -292,12 +288,12 @@
       <workItem from="1537945833355" duration="1289000" />
       <workItem from="1537972065582" duration="5620000" />
       <workItem from="1538031589467" duration="26859000" />
-      <workItem from="1538115156993" duration="27413000" />
+      <workItem from="1538115156993" duration="29392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61186000" />
+    <option name="totallyTimeSpent" value="63165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,7 +306,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="-4" width="1881" height="1204" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11117166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -402,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stepper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="208">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding>
             <element signature="e#39#57#0" expanded="true" />
           </folding>
@@ -412,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="88">
+          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -422,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stepper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="108" column="15" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
+        <state relative-caret-position="480">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#560#906#0" />
