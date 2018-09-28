@@ -7,20 +7,13 @@ PushButton::PushButton(int _GpioPin)
 	this->Init();
 }
 
-PushButton::PushButton(int _GpioPin, bool _reversed)
+PushButton::PushButton(int _GpioPin, int _DebounceTimeMicroseconds)
 {
 	this->GpioPin = _GpioPin;
-	this->ReversedPolarity = _reversed;
+	this->DebounceTimeUs = _DebounceTimeMicroseconds;
 	this->Init();
 }
 
-PushButton::PushButton(int _GpioPin, bool _reversed, bool _debounce)
-{
-	this->GpioPin = _GpioPin;
-	this->ReversedPolarity = _reversed;
-	this->Debouncer = _debounce;
-	this->Init();
-}
 
 PushButton::~PushButton()
 {
@@ -30,35 +23,33 @@ PushButton::~PushButton()
 void PushButton::Init()
 {
 	/* Make sure PiGpio is initialized */
-	//Vfb_GpioInitialise();
+	Vfb_GpioInitialise();
 	
 	/* Set pin as input */
-	Vfb_SetPinMode(this->GpioPin, INPUT);
+	Vfb_SetPinMode(this->GpioPin, PinMode::INPUT);
+	this->SetPullState(PullState::DOWN);
 	
-	if( this->ReversedPolarity )
-	{
-		Vfb_SetPullUpDown(this->GpioPin, PULL_UP);
-	}
-	else
-	{
-		Vfb_SetPullUpDown(this->GpioPin, PULL_DOWN);
-	}
-
 	/* Enable interruptions on pin state changed */
-	//gpioSetAlertFunc(this->GpioPin, (this->*func) );
+	//gpioSetAlertFuncEx(this->GpioPin, &PushButton::static_internal_gpio_callback, this );
+	Vfb_SetGpioCallbackFunc(this->GpioPin, &PushButton::static_internal_gpio_callback, this );
 	
 	this->ReadState();
 }
 
-bool PushButton::ReadGpio()
+void PushButton::SetPullState(PullState state)
 {
-	return (bool) (!Vfb_ReadGpio(GpioPin));
+	Vfb_SetPullUpDown(this->GpioPin, state);
 }
 
-button_state_t PushButton::ReadState()
+bool PushButton::ReadGpio()
+{
+	return (bool) (Vfb_ReadGpio(GpioPin));
+}
+
+PushButtonState PushButton::ReadState()
 {
 	PreviousState = CurrentState;
-	CurrentState = (button_state_t) this->ReadGpio();
+	CurrentState = this->Gpio2State( this->ReadGpio() );
 	
 	if( CurrentState != PreviousState )
 	{
@@ -69,20 +60,52 @@ button_state_t PushButton::ReadState()
 	return CurrentState;
 }
 
-void PushButton::SetStateChangedCallback( state_changed_cb_t f, gpio_callback_t g)
+PushButtonState PushButton::Gpio2State(bool GpioVal)
 {
-	StateChangedCbFunc = f;
-	gpioSetAlertFunc(this->GpioPin, g );
+	if( this->ReversedPolarity == true )
+	{
+		return (PushButtonState)(!GpioVal);
+	}
+	else
+	{
+		return (PushButtonState)(GpioVal);
+	}
 }
 
-void PushButton::internal_gpio_callback(int pin, int level, uint32_t tick)
+void PushButton::SetReversedPolarity(bool reveresed)
 {
-	if( pin != this->GpioPin )
+	this->ReversedPolarity = reveresed;
+}
+
+void PushButton::SetStateChangedCallback( state_changed_cb_t f)
+{
+	StateChangedCbFunc = f;
+}
+
+void PushButton::static_internal_gpio_callback(int pin, int level, uint32_t tick, void* userdata)
+{
+	reinterpret_cast<PushButton*>(userdata)->internal_gpio_callback(pin, level, tick);
+}
+
+void PushButton::internal_gpio_callback(int pin, int NewLevel, uint32_t CurrentTicks)
+{
+	if( NewLevel == 2  || pin != this->GpioPin)
 		return;
 	
-		
-	std::cout << "Interrupt triggered!" << std::endl;
+	static uint32_t LastTicks = 0;
 	
-	if(StateChangedCbFunc > 0)
-		StateChangedCbFunc(CurrentState);
+	if(  this->Gpio2State((bool)NewLevel) != CurrentState )
+	{
+		if(CurrentTicks - LastTicks >= this->DebounceTimeUs)
+		{
+			PreviousState = CurrentState;
+			CurrentState = this->Gpio2State( (bool)NewLevel );
+			
+			if(this->StateChangedCbFunc > 0)
+				StateChangedCbFunc(CurrentState);
+			
+			LastTicks = CurrentTicks;
+		}
+	}
 }
+

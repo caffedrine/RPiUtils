@@ -5,6 +5,8 @@
 
 #ifdef PIGPIO
 #include <pigpio.h>
+#else
+typedef void (*gpioAlertFuncEx_t)  (int event, int level, uint32_t tick, void *userdata);
 #endif
 //////////////////////////////
 // PIN Schema: BCM/GPIO
@@ -16,23 +18,23 @@
 
 #define ERROR_LOG(str)	0
 
-enum LogicalLevel
+enum class LogicalLevel
 {
     LOW = 0,
     HIGH = 1
 };
 
-enum PinMode
+enum class PinMode
 {
     OUTPUT = 1,
     INPUT = 0
 };
 
-enum PullUpDown
+enum class PullState
 {
-    PULL_OFF = 0,
-    PULL_DOWN = 1,
-    PULL_UP = 2
+    OFF = 0,
+    DOWN = 1,
+    UP = 2
 };
 
 enum ReturnStatus
@@ -57,10 +59,10 @@ static inline int _initialise_gpio_interface()
 #endif
 }
 
-static inline int _set_pin_mode(int pin, int  mode)
+static inline int _set_pin_mode(int pin, PinMode mode)
 {
 #ifdef PIGPIO
-    if(gpioSetMode(pin, mode) != 0)
+    if(gpioSetMode(pin, (int)mode) != 0)
     {
     	//ERROR_LOG("Failed to set " << pin << " as INPUT");
         return -3;
@@ -89,6 +91,15 @@ static inline int _write_gpio(int pin, int level)
 #endif
 }
 
+static inline int _write_gpio(int pin, LogicalLevel level)
+{
+#ifdef PIGPIO
+	return gpioWrite(pin, (int)level);
+#else
+	return -1;
+#endif
+}
+
 static inline int _gpio_sleep(int microseconds)
 {
 #ifdef PIGPIO
@@ -98,10 +109,10 @@ static inline int _gpio_sleep(int microseconds)
 #endif
 }
 
-static inline int _set_pull_updown(int gpio, int updown)
+static inline int _set_pull_updown(int gpio, PullState updown)
 {
 #ifdef PIGPIO
-    return gpioSetPullUpDown(gpio, updown);
+    return gpioSetPullUpDown(gpio, (int)updown);
 #else
     return -1;
 #endif
@@ -126,7 +137,7 @@ static inline int _pwm_init(unsigned pin, unsigned freq)
 #endif
 }
 
-static inline int _get_micros()
+static inline uint32_t _get_micros()
 {
 #ifdef PIGPIO
 	return gpioTick();
@@ -135,10 +146,19 @@ static inline int _get_micros()
 #endif
 }
 
-static inline int _get_millis()
+static inline uint32_t _get_millis()
 {
 #ifdef PIGPIO
 	return (gpioTick()/1000);
+#else
+	return FAIL;
+#endif
+}
+
+static inline uint32_t _set_gpio_callback_function(int pin, gpioAlertFuncEx_t cbf, void *context)
+{
+#ifdef PIGPIO
+	gpioSetAlertFuncEx(pin, cbf, context );
 #else
 	return FAIL;
 #endif
@@ -156,5 +176,7 @@ static inline int _get_millis()
 
 #define Vfb_GetMicros()						_get_micros()
 #define Vfb_GetMillis()						_get_millis()
+
+#define Vfb_SetGpioCallbackFunc(pin, cbf, context)	_set_gpio_callback_function(pin, cbf, context)
 
 #endif // HAL_H

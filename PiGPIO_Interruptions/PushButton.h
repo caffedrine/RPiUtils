@@ -5,41 +5,42 @@
 #include <cstdint>
 #include "hal.h"
 
-/* 1000us = 1ms debouncing time */
-#define DEBOUNCING_TIME_US  1000
-
-typedef enum PushButtonState
+enum class PushButtonState
 {
     DOWN = 1,
     UP = 0
-}button_state_t;
+};
 
-typedef void (*state_changed_cb_t)(button_state_t);
-typedef void (*gpio_callback_t)(int, int, uint32_t);
+typedef void (*state_changed_cb_t)(PushButtonState);
 
 class PushButton
 {
 public:
     int GpioPin;
     bool ReversedPolarity = false;
-    bool Debouncer = false;
-    button_state_t CurrentState, PreviousState;
+    int DebounceTimeUs = 0;
+    PushButtonState CurrentState, PreviousState;
 	
     PushButton(int GpioPin);
-    PushButton(int GpioPin, bool reversed);
-    PushButton(int GpioPin, bool reversed, bool debouncer);
+    PushButton(int GpioPin, int DebounceTimeMicroseconds = 0);
     ~PushButton();
     
-    button_state_t ReadState();
+    PushButtonState ReadState();
     bool ReadGpio();
-    void SetStateChangedCallback( state_changed_cb_t, gpio_callback_t );
-	void internal_gpio_callback(int pin, int level, uint32_t CurrentTick);
-
+    void SetPullState(PullState);
+    void SetReversedPolarity(bool reveresed);
+    void SetStateChangedCallback( state_changed_cb_t );
+    
 private:
 	/* State changed callback function*/
 	state_changed_cb_t StateChangedCbFunc = NULL;
 	
+	/* Used to make callback function available inside class*/
+	static void static_internal_gpio_callback(int pin, int level, uint32_t tick, void* userdata);
+	void internal_gpio_callback(int pin, int NewLevel, uint32_t CurrentTick);
+	
 	void Init();
+	inline PushButtonState Gpio2State( bool GpioVal );
 };
 
 #endif // PUSHBUTTON_H
