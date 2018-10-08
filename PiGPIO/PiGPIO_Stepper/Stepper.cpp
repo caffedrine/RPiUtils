@@ -1,18 +1,16 @@
 #include <iostream>
 #include "Stepper.h"
 
-Stepper::Stepper(uint8_t Pulse, uint8_t Feedback, uint8_t Direction)
+Stepper::Stepper(uint8_t Pulse, uint8_t Direction)
 {
 	this->PulsePin = Pulse;
-	this->FeedbackPin = Feedback;
 	this->DirectionPin = Direction;
 	this->Init();
 }
 
-Stepper::Stepper(uint8_t Pulse, uint8_t Feedback, uint8_t Direction, uint8_t Enable)
+Stepper::Stepper(uint8_t Pulse, uint8_t Direction, uint8_t Enable)
 {
 	this->PulsePin = Pulse;
-	this->FeedbackPin = Feedback;
 	this->DirectionPin = Direction;
 	this->EnablePin = Enable;
 	Vfb_SetPinMode(this->EnablePin, PinMode::OUTPUT);
@@ -27,10 +25,9 @@ Stepper::~Stepper()
 void Stepper::Init()
 {
 	Vfb_SetPinMode( this->PulsePin, PinMode::OUTPUT);
-	Vfb_SetPinMode( this->FeedbackPin, PinMode::INPUT);
 	
 	/* Feedback function callback */
-	Vfb_SetGpioCallbackFunc(this->FeedbackPin, static_internal_step_callback, this);
+	Vfb_SetGpioCallbackFunc(this->PulsePin, static_internal_step_callback, this);
 }
 
 long Stepper::PwmConfig(unsigned Frequency, uint8_t DutyProcents)
@@ -101,8 +98,8 @@ void Stepper::static_internal_step_callback(int pin, int level, uint32_t tick, v
 
 void Stepper::internal_step_callback(int pin, int NewLevel, uint32_t CurrentTick)
 {
-	/* Not our interrupt */
-	if( NewLevel == 2  || pin != this->FeedbackPin)
+	/* Not our interrupt? */
+	if( NewLevel == 2  || pin != this->PulsePin)
 		return;
 	
 	/* Count only high pulses */
@@ -115,6 +112,10 @@ void Stepper::internal_step_callback(int pin, int NewLevel, uint32_t CurrentTick
 	
 	/* At this point one step was made */
 	StepsDone++;
+	
+	static uint32_t  last_tick = 0;
+	std::cout << "Step done in: " << (CurrentTick - last_tick) << " us" << std::endl;
+	last_tick = CurrentTick;
 	
 	if( this->StepsToDo > 0 && this->StepsDone == StepsToDo)
 	{

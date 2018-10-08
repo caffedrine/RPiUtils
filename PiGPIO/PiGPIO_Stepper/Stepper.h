@@ -23,8 +23,8 @@ typedef void (*steps_finished_t)(long);
 class Stepper
 {
 public:
-	Stepper(uint8_t Pulse, uint8_t Feedback, uint8_t Direction);
-	Stepper(uint8_t Pulse, uint8_t Feedback, uint8_t Direction, uint8_t Enable);
+	Stepper(uint8_t Pulse, uint8_t Direction);
+	Stepper(uint8_t Pulse, uint8_t Direction, uint8_t Enable);
 	~Stepper();
 	
 	long StepsToDo = 0, StepsDone = 0;
@@ -51,7 +51,6 @@ private:
 	steps_finished_t StepsDoneCb;
 	static void static_internal_step_callback(int pin, int level, uint32_t tick, void* userdata);
 	void internal_step_callback(int pin, int NewLevel, uint32_t CurrentTick);
-	
 };
 
 
