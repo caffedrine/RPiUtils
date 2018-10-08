@@ -44,6 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/include/interfaces"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,6 +69,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/include/interfaces"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -84,7 +88,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/main.cpp">
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.cpp">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.h">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Common.h">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Config.h">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Motor.cpp">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Motor.h">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/main.cpp">
+			<Option target="DriversContainer"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/time_utils.h">
 			<Option target="DriversContainer"/>
 		</Unit>
 		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/CMakeLists.txt">

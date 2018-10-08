@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/Gpio.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles/PiGPIO.dir/Gpio.cpp.o"
-  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/PushButton.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles/PiGPIO.dir/PushButton.cpp.o"
-  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/Stepper.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles/PiGPIO.dir/Stepper.cpp.o"
-  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/main.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles/PiGPIO.dir/main.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/Gpio.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles/PiGPIO.dir/Gpio.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/PushButton.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles/PiGPIO.dir/PushButton.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/Stepper.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles/PiGPIO.dir/Stepper.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/main.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles/PiGPIO.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

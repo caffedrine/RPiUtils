@@ -59,10 +59,10 @@ RM = /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions
+CMAKE_SOURCE_DIR = /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug
+CMAKE_BINARY_DIR = /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/PiGPIO.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interru
 CMakeFiles/PiGPIO.dir/all:
 	$(MAKE) -f CMakeFiles/PiGPIO.dir/build.make CMakeFiles/PiGPIO.dir/depend
 	$(MAKE) -f CMakeFiles/PiGPIO.dir/build.make CMakeFiles/PiGPIO.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target PiGPIO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target PiGPIO"
 .PHONY : CMakeFiles/PiGPIO.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/PiGPIO.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PiGPIO.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PiGPIO.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO_Interruptions/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/PiGPIO_Drivers/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/PiGPIO.dir/rule
 
 # Convenience name for target.

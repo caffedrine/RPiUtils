@@ -4,12 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/main.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/DriversContainer.dir/main.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/DriversContainer.dir/src/Button.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Motor.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/DriversContainer.dir/src/Motor.cpp.o"
+  "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/main.cpp" "/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/DriversContainer.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../src/drivers"
+  "../include/interfaces"
   )
 
 # Targets to which this target links.

@@ -15,7 +15,6 @@ using namespace std;
 #define INT_PIN		16
 
 #define STEPPER_PULSE		21
-#define STEPPER_FEEDBACK	20
 #define STEPPER_DIRECTION	0
 #define STEPPER_ENABLE		0
 
@@ -54,8 +53,8 @@ int main()
 	pin.SetStateChangedCallback( GpioLevelChanged );
 	
 	/* Stepper */
-	Stepper stepper(STEPPER_PULSE, STEPPER_FEEDBACK, STEPPER_DIRECTION);
-	stepper.PwmConfig(100, 10);
+	Stepper stepper(STEPPER_PULSE, STEPPER_DIRECTION);
+	stepper.PwmConfig(1000, 10);
 	stepper.SetStepsDoneCallback( OnStepsDone );
 	
 	bool toogleFlag = false;

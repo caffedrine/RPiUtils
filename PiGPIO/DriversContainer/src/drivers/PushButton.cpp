@@ -101,11 +101,18 @@ void PushButton::internal_gpio_callback(int pin, int NewLevel, uint32_t CurrentT
 			PreviousState = CurrentState;
 			CurrentState = this->Gpio2State( (bool)NewLevel );
 			
-			if(this->StateChangedCbFunc > 0)
-				StateChangedCbFunc(CurrentState);
+			/* Emit changes */
+			OnStateChanged(CurrentState new_state)
 			
 			LastTicks = CurrentTicks;
 		}
 	}
+}
+
+void PushButton::OnStateChanged(PushButtonState new_state)
+{
+	/* Call callback function*/
+	if(this->StateChangedCbFunc > 0)
+		StateChangedCbFunc(CurrentState);
 }
 

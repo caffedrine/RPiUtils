@@ -31,6 +31,8 @@ public:
     void SetReversedPolarity(bool reveresed);
     void SetStateChangedCallback( state_changed_cb_t );
     
+    virtual void OnStateChanged(PushButtonState stte);
+    
 private:
 	/* State changed callback function*/
 	state_changed_cb_t StateChangedCbFunc = NULL;

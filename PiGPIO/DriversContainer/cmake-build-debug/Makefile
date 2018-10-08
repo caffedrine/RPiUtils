@@ -123,32 +123,86 @@ DriversContainer/fast:
 	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/build
 .PHONY : DriversContainer/fast
 
-main.o: main.cpp.o
+src/Button.o: src/Button.cpp.o
 
-.PHONY : main.o
+.PHONY : src/Button.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Button.cpp.o:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/Button.cpp.o
+.PHONY : src/Button.cpp.o
 
-main.i: main.cpp.i
+src/Button.i: src/Button.cpp.i
 
-.PHONY : main.i
+.PHONY : src/Button.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Button.cpp.i:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/Button.cpp.i
+.PHONY : src/Button.cpp.i
 
-main.s: main.cpp.s
+src/Button.s: src/Button.cpp.s
 
-.PHONY : main.s
+.PHONY : src/Button.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Button.cpp.s:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/Button.cpp.s
+.PHONY : src/Button.cpp.s
+
+src/Motor.o: src/Motor.cpp.o
+
+.PHONY : src/Motor.o
+
+# target to build an object file
+src/Motor.cpp.o:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/Motor.cpp.o
+.PHONY : src/Motor.cpp.o
+
+src/Motor.i: src/Motor.cpp.i
+
+.PHONY : src/Motor.i
+
+# target to preprocess a source file
+src/Motor.cpp.i:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/Motor.cpp.i
+.PHONY : src/Motor.cpp.i
+
+src/Motor.s: src/Motor.cpp.s
+
+.PHONY : src/Motor.s
+
+# target to generate assembly for a file
+src/Motor.cpp.s:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/Motor.cpp.s
+.PHONY : src/Motor.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/DriversContainer.dir/build.make CMakeFiles/DriversContainer.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DriversContainer"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Button.o"
+	@echo "... src/Button.i"
+	@echo "... src/Button.s"
+	@echo "... src/Motor.o"
+	@echo "... src/Motor.i"
+	@echo "... src/Motor.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

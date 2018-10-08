@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/curiosul/Workspaces/RPi/
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e06f0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e06f0.dir/build.make CMakeFiles/cmTC_e06f0.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ad849/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad849.dir/build.make CMakeFiles/cmTC_ad849.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e06f0.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_e06f0.dir/testCCompiler.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_e06f0
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e06f0.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_e06f0.dir/testCCompiler.c.o  -o cmTC_e06f0 
+Building C object CMakeFiles/cmTC_ad849.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ad849.dir/testCCompiler.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ad849
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad849.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_ad849.dir/testCCompiler.c.o  -o cmTC_ad849 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_83141/fast"
-/usr/bin/make -f CMakeFiles/cmTC_83141.dir/build.make CMakeFiles/cmTC_83141.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bb889/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb889.dir/build.make CMakeFiles/cmTC_bb889.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o   -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_83141
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83141.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o  -o cmTC_83141 
+Building C object CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o   -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_bb889
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb889.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o  -o cmTC_bb889 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -61,9 +61,9 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83141' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cckRj1jM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_83141 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83141' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bb889' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSnOXEv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bb889 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bb889' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -71,14 +71,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_83141/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_83141.dir/build.make CMakeFiles/cmTC_83141.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_bb889/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_bb889.dir/build.make CMakeFiles/cmTC_bb889.dir/build]
   ignore line: [make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o   -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_83141]
-  ignore line: [/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83141.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o  -o cmTC_83141 ]
+  ignore line: [Building C object CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o   -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_bb889]
+  ignore line: [/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb889.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o  -o cmTC_bb889 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -90,13 +90,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83141' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cckRj1jM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_83141 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bb889' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSnOXEv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_bb889 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cckRj1jM.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccSnOXEv.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_83141] ==> ignore
+    arg [cmTC_bb889] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -127,7 +127,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_83141.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_bb889.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -159,14 +159,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_94e3a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_94e3a.dir/build.make CMakeFiles/cmTC_94e3a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_12e20/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12e20.dir/build.make CMakeFiles/cmTC_12e20.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_94e3a.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_94e3a.dir/feature_tests.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_94e3a
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94e3a.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_94e3a.dir/feature_tests.c.o  -o cmTC_94e3a 
+Building C object CMakeFiles/cmTC_12e20.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_12e20.dir/feature_tests.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_12e20
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12e20.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_12e20.dir/feature_tests.c.o  -o cmTC_12e20 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -179,14 +179,14 @@ make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPI
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ac33f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ac33f.dir/build.make CMakeFiles/cmTC_ac33f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e7e3c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7e3c.dir/build.make CMakeFiles/cmTC_e7e3c.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ac33f.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_ac33f.dir/feature_tests.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_ac33f
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac33f.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_ac33f.dir/feature_tests.c.o  -o cmTC_ac33f 
+Building C object CMakeFiles/cmTC_e7e3c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e7e3c.dir/feature_tests.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e7e3c
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7e3c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_e7e3c.dir/feature_tests.c.o  -o cmTC_e7e3c 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -199,14 +199,14 @@ make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPI
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_07f98/fast"
-/usr/bin/make -f CMakeFiles/cmTC_07f98.dir/build.make CMakeFiles/cmTC_07f98.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ebadb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebadb.dir/build.make CMakeFiles/cmTC_ebadb.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_07f98.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_07f98.dir/feature_tests.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_07f98
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07f98.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_07f98.dir/feature_tests.c.o  -o cmTC_07f98 
+Building C object CMakeFiles/cmTC_ebadb.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_ebadb.dir/feature_tests.c.o   -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ebadb
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebadb.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_ebadb.dir/feature_tests.c.o  -o cmTC_ebadb 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -217,28 +217,28 @@ make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPI
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d991b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d991b.dir/build.make CMakeFiles/cmTC_d991b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_72d6d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_72d6d.dir/build.make CMakeFiles/cmTC_72d6d.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d991b.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_d991b.dir/testCXXCompiler.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_d991b
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d991b.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_d991b.dir/testCXXCompiler.cxx.o  -o cmTC_d991b 
+Building CXX object CMakeFiles/cmTC_72d6d.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_72d6d.dir/testCXXCompiler.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_72d6d
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72d6d.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_72d6d.dir/testCXXCompiler.cxx.o  -o cmTC_72d6d 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c40d1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c40d1.dir/build.make CMakeFiles/cmTC_c40d1.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_96d74/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96d74.dir/build.make CMakeFiles/cmTC_96d74.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_c40d1
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c40d1.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c40d1 
+Building CXX object CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_96d74
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96d74.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_96d74 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -250,9 +250,9 @@ Thread model: posix
 gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c40d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnrDFma.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c40d1 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c40d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96d74' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cci4uPHN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_96d74 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96d74' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -260,14 +260,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c40d1/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c40d1.dir/build.make CMakeFiles/cmTC_c40d1.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_96d74/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_96d74.dir/build.make CMakeFiles/cmTC_96d74.dir/build]
   ignore line: [make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_c40d1]
-  ignore line: [/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c40d1.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c40d1 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o -c /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_96d74]
+  ignore line: [/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96d74.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_96d74 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -279,13 +279,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c40d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnrDFma.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c40d1 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96d74' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cci4uPHN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_96d74 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccnrDFma.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cci4uPHN.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c40d1] ==> ignore
+    arg [cmTC_96d74] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -316,7 +316,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_c40d1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_96d74.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -344,14 +344,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_73371/fast"
-/usr/bin/make -f CMakeFiles/cmTC_73371.dir/build.make CMakeFiles/cmTC_73371.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_825fa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_825fa.dir/build.make CMakeFiles/cmTC_825fa.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_73371.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_73371.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_73371
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73371.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_73371.dir/feature_tests.cxx.o  -o cmTC_73371 
+Building CXX object CMakeFiles/cmTC_825fa.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_825fa.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_825fa
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_825fa.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_825fa.dir/feature_tests.cxx.o  -o cmTC_825fa 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -417,14 +417,14 @@ make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPI
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_da902/fast"
-/usr/bin/make -f CMakeFiles/cmTC_da902.dir/build.make CMakeFiles/cmTC_da902.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c730e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c730e.dir/build.make CMakeFiles/cmTC_c730e.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_da902.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_da902.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_da902
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da902.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_da902.dir/feature_tests.cxx.o  -o cmTC_da902 
+Building CXX object CMakeFiles/cmTC_c730e.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_c730e.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c730e
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c730e.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_c730e.dir/feature_tests.cxx.o  -o cmTC_c730e 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -490,14 +490,14 @@ make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPI
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9dd6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c9dd6.dir/build.make CMakeFiles/cmTC_c9dd6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3a751/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a751.dir/build.make CMakeFiles/cmTC_3a751.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c9dd6.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_c9dd6.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c9dd6
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9dd6.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c9dd6.dir/feature_tests.cxx.o  -o cmTC_c9dd6 
+Building CXX object CMakeFiles/cmTC_3a751.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_3a751.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3a751
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a751.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_3a751.dir/feature_tests.cxx.o  -o cmTC_3a751 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -563,14 +563,14 @@ make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPI
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_66875/fast"
-/usr/bin/make -f CMakeFiles/cmTC_66875.dir/build.make CMakeFiles/cmTC_66875.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8ed6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ed6a.dir/build.make CMakeFiles/cmTC_8ed6a.dir/build
 make[1]: Entering directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_66875.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_66875.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_66875
-/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66875.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_66875.dir/feature_tests.cxx.o  -o cmTC_66875 
+Building CXX object CMakeFiles/cmTC_8ed6a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_8ed6a.dir/feature_tests.cxx.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8ed6a
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ed6a.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_8ed6a.dir/feature_tests.cxx.o  -o cmTC_8ed6a 
 make[1]: Leaving directory '/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

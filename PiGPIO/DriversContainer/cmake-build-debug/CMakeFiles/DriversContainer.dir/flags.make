@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/include/interfaces 
 

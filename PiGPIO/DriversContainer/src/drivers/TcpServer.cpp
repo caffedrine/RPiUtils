@@ -2,7 +2,7 @@
 // Created by Alex C. on 19.07.17.
 //
 
-#include "tcpserver.h"
+#include "TcpServer.h"
 /*  ____   _   _  ____   _      ___  ____  ____
    |  _ \ | | | || __ ) | |    |_ _|/ ___|/ ___|
    | |_) || | | ||  _ \ | |     | || |    \___ \
