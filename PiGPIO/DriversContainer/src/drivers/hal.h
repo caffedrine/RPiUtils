@@ -1,7 +1,7 @@
 ﻿#ifndef HAL_H
 #define HAL_H
 
-#define PIGPIO
+//#define PIGPIO
 
 #ifdef PIGPIO
 #include <pigpio.h>
