@@ -19,7 +19,6 @@ Stepper::Stepper(uint8_t Pulse, uint8_t Direction, uint8_t Enable)
 	this->PulsePin = Pulse;
 	this->DirectionPin = Direction;
 	this->EnablePin = Enable;
-	Vfb_SetPinMode(this->EnablePin, PinMode::OUTPUT);
 	this->Init();
 }
 
@@ -30,10 +29,16 @@ Stepper::~Stepper()
 
 void Stepper::Init()
 {
+	/* Init GPIO pins */
+	Vfb_GpioInitialise();
+	
 	Vfb_SetPinMode( this->PulsePin, PinMode::OUTPUT);
 	
 	if(this->EnablePin > 0)
-		Vfb_SetPinMode( this->EnablePin, PinMode ::OUTPUT);
+	{
+		Vfb_SetPinMode(this->EnablePin, PinMode::OUTPUT);
+		Vfb_WriteGpio(this->EnablePin, LogicalLevel::LOW);
+	}
 	
 	if(this->DirectionPin > 0)
 		Vfb_SetPinMode(this->DirectionPin, PinMode::OUTPUT);
@@ -71,7 +76,7 @@ void Stepper::Stop()
 	Vfb_PwmOut(this->PulsePin, 0);
 	
 	if(this->EnablePin > 0)
-		Vfb_WriteGpio(this->EnablePin, 0);
+		Vfb_WriteGpio(this->EnablePin, LogicalLevel::LOW);
 }
 
 void Stepper::Run()

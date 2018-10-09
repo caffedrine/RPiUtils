@@ -17,10 +17,13 @@ CMakeFiles/DriversContainerExe.dir/src/drivers/TcpServer.cpp.o: ../src/drivers/T
 CMakeFiles/DriversContainerExe.dir/src/drivers/TcpServer.cpp.o: ../src/drivers/TcpServer.h
 
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/drivers/PushButton.h
+CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/drivers/Stepper.h
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/drivers/hal.h
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/Common.h
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/Config.h
+CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/drivers/hal.h
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/peripherals/LeftButton.h
+CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/peripherals/Motor.h
 CMakeFiles/DriversContainerExe.dir/src/main.cpp.o: ../src/peripherals/RightButton.h
 

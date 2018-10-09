@@ -8,19 +8,30 @@
 #include "Config.h"
 #include "drivers/PushButton.h"
 
-#include "RightButton.h"
+#include "Motor.h"
 
 class LeftButton : public PushButton
 {
 public:
-	LeftButton() : PushButton(LEFT_BUTTON_PIN)
+	LeftButton() : PushButton(LEFT_BUTTON_PIN, 900)
 	{
-	
+		ReversedPolarity = true;
 	}
 	
 	void OnStateChanged(PushButtonState new_state) override
 	{
 		std::cout << "Left button: " << (new_state==PushButtonState::UP?"UP":"DOWN")  << std::endl;
+		
+		if(new_state == PushButtonState::DOWN)
+		{
+			g_Motor.SetDirection(StepperDirection::FORWARD);
+			g_Motor.Run();
+		}
+		else
+		{
+			g_Motor.Stop();
+		}
+		
 	}
 private:
 };
