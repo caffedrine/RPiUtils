@@ -1,6 +1,7 @@
 #ifndef DRIVERSCONTAINER_MOTOR_H
 #define DRIVERSCONTAINER_MOTOR_H
 
+#include <iostream>
 #include "drivers/Stepper.h"
 #include "Config.h"
 class Motor : public Stepper

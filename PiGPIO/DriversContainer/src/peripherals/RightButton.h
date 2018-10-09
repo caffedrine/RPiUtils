@@ -1,6 +1,7 @@
 #ifndef DRIVERSCONTAINER_RIGHTBUTTON_H
 #define DRIVERSCONTAINER_RIGHTBUTTON_H
 
+#include <iostream>
 #include "Config.h"
 #include "drivers/PushButton.h"
 
@@ -17,6 +18,7 @@ public:
 	void OnStateChanged(PushButtonState new_state) override
 	{
 		std::cout << "Right button: " << (new_state==PushButtonState::UP?"UP":"DOWN")  << std::endl;
+		std::cout << std::flush;
 		
 		if(new_state == PushButtonState::DOWN)
 		{

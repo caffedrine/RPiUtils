@@ -5,6 +5,7 @@
 #include <thread>
 
 #include "Common.h"
+#include "communication/ServerTCP.h"
 #include "drivers/hal.h"
 #include "peripherals/RightButton.h"
 #include "peripherals/LeftButton.h"
@@ -15,6 +16,7 @@ bool _ProgramContinue = true;
 void OnExit()
 {
 	g_Motor.Stop();
+	std:: cout << "Executing STOP routine..." << std::endl;
 }
 
 void SigHandler(int signum)
@@ -25,14 +27,18 @@ void SigHandler(int signum)
 	exit(signum);
 }
 
-int main()
+void Initialize()
 {
-	std::cout << "---STARTED---" << std::endl;
-	
 	/* Handle interruption signals */
 	signal(SIGINT, SigHandler);
 	signal(SIGQUIT, SigHandler);
 	signal(SIGTSTP, SigHandler);
+}
+
+int main()
+{
+	std::cout << "---STARTED---" << std::endl;
+	Initialize();
 	
 	while( true )
 	{

@@ -14,6 +14,7 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <fcntl.h>
 
 /**
  * Simple sockets wrapper.
@@ -52,6 +53,8 @@ public:
                                                         // response from client will just be send to callback function.
     void keepLinkActive();
     void keepLinkActiveSeparateThread();
+	int  setSocketBlockingEnabled(int blocking);
+
     
     //Additional methods
     std::string getLastError();                 //Return last error if any

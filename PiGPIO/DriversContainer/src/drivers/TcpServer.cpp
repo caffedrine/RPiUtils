@@ -225,8 +225,8 @@ void TcpServer::clientWaitForIncomingDataSeparateThread()
 {
     this->readerThreadActive = true;
     
-    readerThread = std::thread([this](){ clientWaitForIncomingData(); });   // Really, don't know how to explain this
-    readerThread.detach();                                                  // monster lambada. But it works ^_^
+    readerThread = std::thread([this](){ clientWaitForIncomingData(); });   // Really, don't know how to explain to
+    readerThread.detach();                                                  // myself this lambda. But it works ^_^
 }
 
 /**
@@ -316,6 +316,22 @@ void TcpServer::setLastError(std::string err)
 std::string TcpServer::getLastError()
 {
     return this->lastError;
+}
+
+/**
+ * Choose to enable blocking on client's socket or not
+ * @param fd Socket file descriptor
+ * @param blocking 0 - false, 1 - true
+ * @return 0 in case of success, -1 in case of any error
+ */
+int TcpServer::setSocketBlockingEnabled(int blocking)
+{
+        if (hClient < 0) return -1;
+        
+        int flags = fcntl(hClient, F_GETFL, 0);
+        if (flags == -1) return -1;
+        flags = blocking ? (flags & ~O_NONBLOCK) : (flags | O_NONBLOCK);
+        return (fcntl(hClient, F_SETFL, flags) == 0) ? 0 : -1;
 }
 
 
