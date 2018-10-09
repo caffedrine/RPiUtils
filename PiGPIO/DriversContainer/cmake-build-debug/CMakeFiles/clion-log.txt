@@ -1,16 +1,4 @@
 /home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer
 -- Configuring done
-CMake Error at src/CMakeLists.txt:7 (add_executable):
-  Cannot find source file:
-
-    src/Config.h
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at src/CMakeLists.txt:7 (add_executable):
-  No SOURCES given to target: DriversContainer
-
-
+-- Generating done
 -- Build files have been written to: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug

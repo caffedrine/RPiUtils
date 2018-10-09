@@ -102,7 +102,7 @@ void PushButton::internal_gpio_callback(int pin, int NewLevel, uint32_t CurrentT
 			CurrentState = this->Gpio2State( (bool)NewLevel );
 			
 			/* Emit changes */
-			OnStateChanged(CurrentState new_state)
+			OnStateChanged(CurrentState);
 			
 			LastTicks = CurrentTicks;
 		}

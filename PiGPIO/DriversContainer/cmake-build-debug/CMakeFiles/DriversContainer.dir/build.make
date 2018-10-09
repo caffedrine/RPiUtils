@@ -57,67 +57,6 @@ include CMakeFiles/DriversContainer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DriversContainer.dir/flags.make
 
-CMakeFiles/DriversContainer.dir/src/Motor.cpp.o: CMakeFiles/DriversContainer.dir/flags.make
-CMakeFiles/DriversContainer.dir/src/Motor.cpp.o: ../src/Motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DriversContainer.dir/src/Motor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DriversContainer.dir/src/Motor.cpp.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Motor.cpp
-
-CMakeFiles/DriversContainer.dir/src/Motor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DriversContainer.dir/src/Motor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Motor.cpp > CMakeFiles/DriversContainer.dir/src/Motor.cpp.i
-
-CMakeFiles/DriversContainer.dir/src/Motor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DriversContainer.dir/src/Motor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Motor.cpp -o CMakeFiles/DriversContainer.dir/src/Motor.cpp.s
-
-CMakeFiles/DriversContainer.dir/src/Button.cpp.o: CMakeFiles/DriversContainer.dir/flags.make
-CMakeFiles/DriversContainer.dir/src/Button.cpp.o: ../src/Button.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DriversContainer.dir/src/Button.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DriversContainer.dir/src/Button.cpp.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.cpp
-
-CMakeFiles/DriversContainer.dir/src/Button.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DriversContainer.dir/src/Button.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.cpp > CMakeFiles/DriversContainer.dir/src/Button.cpp.i
-
-CMakeFiles/DriversContainer.dir/src/Button.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DriversContainer.dir/src/Button.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.cpp -o CMakeFiles/DriversContainer.dir/src/Button.cpp.s
-
-CMakeFiles/DriversContainer.dir/src/main.cpp.o: CMakeFiles/DriversContainer.dir/flags.make
-CMakeFiles/DriversContainer.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DriversContainer.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DriversContainer.dir/src/main.cpp.o -c /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/main.cpp
-
-CMakeFiles/DriversContainer.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DriversContainer.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/main.cpp > CMakeFiles/DriversContainer.dir/src/main.cpp.i
-
-CMakeFiles/DriversContainer.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DriversContainer.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/main.cpp -o CMakeFiles/DriversContainer.dir/src/main.cpp.s
-
-# Object files for target DriversContainer
-DriversContainer_OBJECTS = \
-"CMakeFiles/DriversContainer.dir/src/Motor.cpp.o" \
-"CMakeFiles/DriversContainer.dir/src/Button.cpp.o" \
-"CMakeFiles/DriversContainer.dir/src/main.cpp.o"
-
-# External object files for target DriversContainer
-DriversContainer_EXTERNAL_OBJECTS =
-
-DriversContainer: CMakeFiles/DriversContainer.dir/src/Motor.cpp.o
-DriversContainer: CMakeFiles/DriversContainer.dir/src/Button.cpp.o
-DriversContainer: CMakeFiles/DriversContainer.dir/src/main.cpp.o
-DriversContainer: CMakeFiles/DriversContainer.dir/build.make
-DriversContainer: CMakeFiles/DriversContainer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DriversContainer"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DriversContainer.dir/link.txt --verbose=$(VERBOSE)
-
-# Rule to build all files generated by this target.
-CMakeFiles/DriversContainer.dir/build: DriversContainer
-
-.PHONY : CMakeFiles/DriversContainer.dir/build
-
 CMakeFiles/DriversContainer.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/DriversContainer.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/DriversContainer.dir/clean
