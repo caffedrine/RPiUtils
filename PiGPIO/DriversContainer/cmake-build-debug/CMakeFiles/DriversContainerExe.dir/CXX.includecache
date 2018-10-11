@@ -20,6 +20,30 @@ cstdint
 hal.h
 ../src/drivers/hal.h
 
+../src/drivers/TcpServer.h
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+cstdlib
+-
+cstring
+-
+algorithm
+-
+string
+-
+iostream
+-
+thread
+-
+chrono
+-
+fcntl.h
+-
+
 ../src/drivers/hal.h
 pigpio.h
 -
@@ -29,6 +53,20 @@ Config.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Config.h
 
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Config.h
+
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/communication/ServerTCP.h
+drivers/TcpServer.h
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/communication/drivers/TcpServer.h
+
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Gpio.cpp
+Gpio.h
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Gpio.h
+
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Gpio.h
+iostream
+-
+hal.h
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/hal.h
 
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Stepper.cpp
 iostream
@@ -41,6 +79,34 @@ cstdint
 -
 hal.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/hal.h
+
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/TcpServer.cpp
+TcpServer.h
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/TcpServer.h
+
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/TcpServer.h
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+cstdlib
+-
+cstring
+-
+algorithm
+-
+string
+-
+iostream
+-
+thread
+-
+chrono
+-
+fcntl.h
+-
 
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/hal.h
 pigpio.h
@@ -59,6 +125,8 @@ thread
 -
 Common.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/Common.h
+communication/ServerTCP.h
+/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/communication/ServerTCP.h
 drivers/hal.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/hal.h
 peripherals/RightButton.h
@@ -69,6 +137,8 @@ peripherals/Motor.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/Motor.h
 
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/LeftButton.h
+iostream
+-
 Config.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/Config.h
 drivers/PushButton.h
@@ -77,12 +147,16 @@ Motor.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/Motor.h
 
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/Motor.h
+iostream
+-
 drivers/Stepper.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/drivers/Stepper.h
 Config.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/Config.h
 
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/RightButton.h
+iostream
+-
 Config.h
 /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals/Config.h
 drivers/PushButton.h

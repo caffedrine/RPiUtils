@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -g   -std=gnu++11
 
-CXX_DEFINES = -DPIGPIO
+CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals 
+CXX_INCLUDES = -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/communication -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers -I/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals 
 

@@ -4,7 +4,7 @@ project(DriversContainer)
 set(CMAKE_CXX_STANDARD 11)
 
 # Enable PiGPIO if installed
-add_compile_definitions(PIGPIO)
+# add_compile_definitions(PIGPIO)
 
 file(GLOB_RECURSE DriversContainer_SOURCES "src/*.cpp")
 file(GLOB_RECURSE DriversContainer_HEADERS "src/*.h")

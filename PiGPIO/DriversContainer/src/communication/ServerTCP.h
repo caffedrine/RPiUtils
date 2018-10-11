@@ -9,10 +9,13 @@
 
 class ServerTCP : TcpServer
 {
+public:
 	ServerTCP() : TcpServer(1337)
 	{
-	
+		startServer();
+		
 	}
+private:
 
 };
 
