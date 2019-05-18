@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/DriversContainer.dir/Motor.cpp.o CMakeFiles/DriversContainer.dir/Button.cpp.o CMakeFiles/DriversContainer.dir/main.cpp.o  -o DriversContainer 

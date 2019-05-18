@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/PiGPIO.dir/main.cpp.o CMakeFiles/PiGPIO.dir/PushButton.cpp.o CMakeFiles/PiGPIO.dir/Gpio.cpp.o CMakeFiles/PiGPIO.dir/Stepper.cpp.o  -o PiGPIO -lpigpio -lrt -lpthread 
