@@ -20,20 +20,4 @@ fi
 # Launch UI terminal
 xinit /root/.xinitrc &
 
-# Wait for xinit to start
-while ! DISPLAY=:0 xset q &>/dev/null
-do
-    printf "."
-    sleep 0.1
-done
-
-# Disable screen
-DISPLAY=:0 xset s off # don't activate screensaver
-DISPLAY=:0 xset -dpms # disable DPMS (Energy Star) features.
-DISPLAY=:0 xset s noblank # don't blank the video device
-DISPLAY=:0 xscreensaver-command -deactivate
-
-# Auto hide mouse after 10 seconds of inactivity
-DISPLAY=:0 unclutter -idle 10 -root &
-
 exit 0
