@@ -45,4 +45,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+<<<<<<< HEAD
+=======
+  "CMakeFiles/DriversContainerExe.dir/DependInfo.cmake"
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3
   )

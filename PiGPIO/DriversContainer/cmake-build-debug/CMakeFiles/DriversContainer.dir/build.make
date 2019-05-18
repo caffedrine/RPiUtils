@@ -57,6 +57,7 @@ include CMakeFiles/DriversContainer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DriversContainer.dir/flags.make
 
+<<<<<<< HEAD
 CMakeFiles/DriversContainer.dir/src/Button.cpp.o: CMakeFiles/DriversContainer.dir/flags.make
 CMakeFiles/DriversContainer.dir/src/Button.cpp.o: ../src/Button.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DriversContainer.dir/src/Button.cpp.o"
@@ -265,6 +266,8 @@ CMakeFiles/DriversContainer.dir/requires: CMakeFiles/DriversContainer.dir/src/ma
 
 .PHONY : CMakeFiles/DriversContainer.dir/requires
 
+=======
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3
 CMakeFiles/DriversContainer.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/DriversContainer.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/DriversContainer.dir/clean

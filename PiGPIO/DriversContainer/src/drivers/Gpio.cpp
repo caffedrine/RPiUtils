@@ -20,6 +20,9 @@ Gpio::~Gpio()
 
 void Gpio::Init()
 {
+	/* Init GPIO pins */
+	Vfb_GpioInitialise();
+	
 	Vfb_SetPinMode(this->Pin, PinMode::INPUT);
 	Vfb_SetPullUpDown(this->Pin, PullState::UP);
 	

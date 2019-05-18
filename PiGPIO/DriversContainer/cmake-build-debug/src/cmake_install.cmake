@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/src
+=======
+# Install script for directory: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,3 +36,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+<<<<<<< HEAD
+=======
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/src/drivers/cmake_install.cmake")
+
+endif()
+
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3

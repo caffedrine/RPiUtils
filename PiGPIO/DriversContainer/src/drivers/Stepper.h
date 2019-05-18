@@ -23,6 +23,7 @@ typedef void (*steps_finished_t)(long);
 class Stepper
 {
 public:
+	Stepper(uint8_t Pulse);
 	Stepper(uint8_t Pulse, uint8_t Direction);
 	Stepper(uint8_t Pulse, uint8_t Direction, uint8_t Enable);
 	~Stepper();
@@ -36,9 +37,10 @@ public:
 	bool IsRunning();
 	long PwmConfig(unsigned Frequency, uint8_t DutyProcents);
 	void SetStepsDoneCallback(steps_finished_t);
+	virtual void OnStepsDone();
 	
 private:
-	uint8_t PulsePin, FeedbackPin, DirectionPin, EnablePin = 0;
+	uint8_t PulsePin, DirectionPin = -1, EnablePin = -1;
 	unsigned PwmFreq = 1000;
 	uint8_t PwmDutyProcents = 10;	// 10% default pwm duty
 	

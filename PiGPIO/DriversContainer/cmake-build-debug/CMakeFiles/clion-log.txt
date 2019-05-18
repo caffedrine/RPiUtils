@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/curiosul/.Tools/IDEs/clion-2017.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer
 CMake Error at src/CMakeLists.txt:1 (target_include):
   Unknown CMake command "target_include".
@@ -7,3 +8,9 @@ Call Stack (most recent call first):
 
 -- Configuring incomplete, errors occurred!
 See also "/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+=======
+/home/curiosul/.tools/IDEs/clion-2018.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3

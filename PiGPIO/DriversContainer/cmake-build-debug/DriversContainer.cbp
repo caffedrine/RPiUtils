@@ -31,6 +31,7 @@
 				<Option working_dir="/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j8 -f &quot;/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -39,6 +40,97 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/CMakeLists.txt">
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DriversContainerExe">
+				<Option output="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/DriversContainerExe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/communication"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 DriversContainerExe"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DriversContainerExe/fast">
+				<Option output="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/DriversContainerExe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/communication"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers"/>
+					<Add directory="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/peripherals"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 DriversContainerExe/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Gpio.cpp">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Gpio.h">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/PushButton.cpp">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/PushButton.h">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Stepper.cpp">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/Stepper.h">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/TcpServer.cpp">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/drivers/TcpServer.h">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/src/main.cpp">
+			<Option target="DriversContainerExe"/>
+		</Unit>
+		<Unit filename="/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/CMakeLists.txt">
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/src/CMakeLists.txt">

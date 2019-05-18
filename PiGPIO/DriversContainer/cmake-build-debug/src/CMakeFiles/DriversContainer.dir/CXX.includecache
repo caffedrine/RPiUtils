@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.cpp
 Button.h
 /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.h
@@ -46,3 +47,5 @@ Common.h
 Button.h
 /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/src/Button.h
 
+=======
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3

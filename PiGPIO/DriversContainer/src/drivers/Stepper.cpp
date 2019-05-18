@@ -1,6 +1,12 @@
 #include <iostream>
 #include "Stepper.h"
 
+Stepper::Stepper(uint8_t Pulse)
+{
+	this->PulsePin = Pulse;
+	this->Init();
+}
+
 Stepper::Stepper(uint8_t Pulse, uint8_t Direction)
 {
 	this->PulsePin = Pulse;
@@ -13,18 +19,29 @@ Stepper::Stepper(uint8_t Pulse, uint8_t Direction, uint8_t Enable)
 	this->PulsePin = Pulse;
 	this->DirectionPin = Direction;
 	this->EnablePin = Enable;
-	Vfb_SetPinMode(this->EnablePin, PinMode::OUTPUT);
 	this->Init();
 }
 
 Stepper::~Stepper()
 {
-
+	this->Stop();
 }
 
 void Stepper::Init()
 {
+	/* Init GPIO pins */
+	Vfb_GpioInitialise();
+	
 	Vfb_SetPinMode( this->PulsePin, PinMode::OUTPUT);
+	
+	if(this->EnablePin > 0)
+	{
+		Vfb_SetPinMode(this->EnablePin, PinMode::OUTPUT);
+		Vfb_WriteGpio(this->EnablePin, LogicalLevel::LOW);
+	}
+	
+	if(this->DirectionPin > 0)
+		Vfb_SetPinMode(this->DirectionPin, PinMode::OUTPUT);
 	
 	/* Feedback function callback */
 	Vfb_SetGpioCallbackFunc(this->PulsePin, static_internal_step_callback, this);
@@ -57,6 +74,9 @@ void Stepper::Stop()
 		return;
 	this->SetState(StepperState::STOPPED);
 	Vfb_PwmOut(this->PulsePin, 0);
+	
+	if(this->EnablePin > 0)
+		Vfb_WriteGpio(this->EnablePin, LogicalLevel::LOW);
 }
 
 void Stepper::Run()
@@ -65,11 +85,15 @@ void Stepper::Run()
 	this->StepsToDo = 0;
 	this->StepsDone = 0;
 	Vfb_PwmOut(this->PulsePin, (uint8_t)map(this->PwmDutyProcents, 0, 100, 0, 255) );
+	
+	if(this->EnablePin > 0)
+		Vfb_WriteGpio(this->EnablePin, 1);
 }
 
 void Stepper::SetDirection(StepperDirection NewDirection)
 {
-	Vfb_WriteGpio(this->DirectionPin, (LogicalLevel)NewDirection);
+	if(this->DirectionPin > 0)
+		Vfb_WriteGpio(this->DirectionPin, (LogicalLevel)NewDirection);
 }
 
 void Stepper::SetState(StepperState _currentState)
@@ -89,6 +113,9 @@ void Stepper::RunSteps(long steps)
 	this->StepsToDo = steps;
 	this->StepsDone = 0;
 	Vfb_PwmOut(this->PulsePin, (uint8_t)map(this->PwmDutyProcents, 0, 100, 0, 255) );
+	
+	if(this->EnablePin > 0)
+		Vfb_WriteGpio(this->EnablePin, 1);
 }
 
 void Stepper::static_internal_step_callback(int pin, int level, uint32_t tick, void *userdata)
@@ -122,12 +149,17 @@ void Stepper::internal_step_callback(int pin, int NewLevel, uint32_t CurrentTick
 		Vfb_PwmOut(this->PulsePin, 0);
 		SetState(StepperState::STOPPED);
 		
-		if(StepsDoneCb > 0)
-			StepsDoneCb(StepsDone);
+		OnStepsDone();
 	}
 }
 
 void Stepper::SetStepsDoneCallback(steps_finished_t f)
 {
 	this->StepsDoneCb = f;
+}
+
+void Stepper::OnStepsDone()
+{
+	if(StepsDoneCb > 0)
+		StepsDoneCb(this->StepsDone);
 }

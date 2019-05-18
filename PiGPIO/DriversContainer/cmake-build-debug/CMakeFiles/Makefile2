@@ -57,7 +57,48 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer
 
 # The top-level build directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_BINARY_DIR = /home/curiosul/Workspaces/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug
+=======
+CMAKE_BINARY_DIR = /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug
+
+#=============================================================================
+# Target rules for target CMakeFiles/DriversContainerExe.dir
+
+# All Build rule for target.
+CMakeFiles/DriversContainerExe.dir/all:
+	$(MAKE) -f CMakeFiles/DriversContainerExe.dir/build.make CMakeFiles/DriversContainerExe.dir/depend
+	$(MAKE) -f CMakeFiles/DriversContainerExe.dir/build.make CMakeFiles/DriversContainerExe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target DriversContainerExe"
+.PHONY : CMakeFiles/DriversContainerExe.dir/all
+
+# Include target in all.
+all: CMakeFiles/DriversContainerExe.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DriversContainerExe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DriversContainerExe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/curiosul/Workspaces/RPi/RaspberryPiUtils/PiGPIO/DriversContainer/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/DriversContainerExe.dir/rule
+
+# Convenience name for target.
+DriversContainerExe: CMakeFiles/DriversContainerExe.dir/rule
+
+.PHONY : DriversContainerExe
+
+# clean rule for target.
+CMakeFiles/DriversContainerExe.dir/clean:
+	$(MAKE) -f CMakeFiles/DriversContainerExe.dir/build.make CMakeFiles/DriversContainerExe.dir/clean
+.PHONY : CMakeFiles/DriversContainerExe.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DriversContainerExe.dir/clean
+
+.PHONY : clean
+>>>>>>> ac7a99c05fc5da45a5f2d93278c52454f64446e3
 
 #=============================================================================
 # Special targets to cleanup operation of make.
