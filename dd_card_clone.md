@@ -20,18 +20,23 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sdc2        29G  2,9G   25G  11% /media/user/rootfs
 ```
 
-#### 3.0 Use DD utility to copy blocks
+#### 3. Resize the SDcard using GParted 
+
+Shrink the card size to it's data size. IF the data have 3.8GB then shring card from it's maximum size to 4Gb
+
+
+#### 4.0 Use DD utility to copy blocks
 ```bash
-$ sudo dd if=/dev/sdc of=~/Desktop/raspbian_stretch_xinit.img bs=1M count=3000
+$ sudo dd if=/dev/sdc of=~/Desktop/raspbian_stretch_xinit.img bs=1M count=4000
 ```
 
-Assuming that media device have a total of 3.0 GB, tell DD to copy only 3000 blocks of 1MB each
+Assuming that media device have a total of 4.0 GB, tell DD to copy only 4000 blocks of 1MB each
 
 #### or
 
-#### 3.1 Use DD utility to copy blocks and show progress
+#### 4.1 Use DD utility to copy blocks and show progress
 
 ```bash
 $ sudo apt-get install pv
-$ sudo dd if=/dev/sdc | pv | of=~/Desktop/raspbian_stretch_xinit.img bs=1M count=3000
+$ sudo dd if=/dev/sdc | pv | of=~/Desktop/raspbian_stretch_xinit.img bs=1M count=4000
 ```
